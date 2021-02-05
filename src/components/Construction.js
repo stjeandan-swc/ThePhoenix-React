@@ -29,13 +29,36 @@ const STYLE_CONTAINER = styled.div`
     height: 90vh;
 
     h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 0.5rem 0rem;
         letter-spacing: 10px;
 
         span{
             color: red;
             font-weight: bold;
+            font-size: 3.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        h2{
+            font-size: 2rem;
+
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        h2{
+            font-size: 1.25rem;
+
+            span{
+                font-size: 1.5rem;
+            }
         }
     }
 `;

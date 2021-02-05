@@ -30,11 +30,28 @@ const STYLE_CONTAINER= styled.div`
 
 const STYLE_GREETING = styled.h2`
     overflow: hidden;
+    font-size: 2.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
+    }
 `;
 
 const STYLE_ACCENT = styled.span`
     color: red;
-    font-size: 4rem;
+    font-size: 3.5rem;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 1.5rem;
+    }
 `;
 
 const STYLE_BUTTON =  styled.button`
@@ -52,6 +69,10 @@ const STYLE_BUTTON =  styled.button`
             background-color: red;
             color: black;
         }
+
+        @media (max-width: 576px) {
+        font-size: 1rem;
+    }
 `;
 
 export default LandingSection;
