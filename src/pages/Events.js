@@ -1,10 +1,15 @@
 import React from 'react';
 
+// Components
+import Nav from '../components/Nav';
+import Construction from '../components/Construction';
+
 const Events = () => {
 
     return(
         <div>
-            <h1>Events</h1>
+            <Nav />
+            <Construction />
         </div>
     );
 };

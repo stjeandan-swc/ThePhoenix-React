@@ -1,10 +1,15 @@
 import React from 'react';
 
+// Components
+import Nav from '../components/Nav';
+import Construction from '../components/Construction';
+
 const Rentals = () => {
 
     return(
         <div>
-            <h1>Rentals</h1>
+            <Nav />
+            <Construction />
         </div>
     );
 };

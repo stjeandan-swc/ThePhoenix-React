@@ -1,10 +1,15 @@
 import React from 'react';
 
+// Components
+import Nav from '../components/Nav';
+import Construction from '../components/Construction';
+
 const Membership = () => {
 
     return(
         <div>
-            <h1>Membership</h1>
+            <Nav />
+            <Construction />
         </div>
     );
 };

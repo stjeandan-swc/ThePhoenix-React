@@ -1,10 +1,15 @@
 import React from 'react';
 
+// Components
+import Nav from '../components/Nav';
+import Construction from '../components/Construction';
+
 const ContactUs = () => {
 
     return(
         <div>
-            <h1>Contact Us</h1>
+            <Nav />
+            <Construction />
         </div>
     );
 };
