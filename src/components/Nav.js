@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 // Styling
-import styled, {keyframes, css} from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 const Nav = () => {
 
@@ -63,13 +63,13 @@ const STYLE_NAV_LOGO = styled.div`
 `;
 
 const navLinkFade = keyframes`
-    0% {
+    from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(100%);
     }
-    100% {
+    to {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0%);
     }
 `;
 
@@ -77,6 +77,7 @@ const STYLE_NAV_LINKS = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     position: absolute;
     background-color: #3d3d3d;
     right: 0px;
@@ -99,8 +100,10 @@ const STYLE_NAV_LINKS = styled.ul`
     }}
 
     li{
+        width: 100%;
+        text-align: center;
         opacity: 0;
-        animation: ${navLinkFade} 0.5s ease forwards;
+        animation: ${navLinkFade} 2s ease forwards;
     }
 
     a{
