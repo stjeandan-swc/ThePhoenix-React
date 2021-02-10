@@ -1,10 +1,20 @@
-export const textSlideAnim = {
-    hidden: {y: 200},
+export const pageAnim = {
+    hidden: {
+        opacity: 0,
+        x: -300,
+    },
     show: {
-        y: 0,
+        opacity: 1,
+        x: 0,
         transition: {
-            duration: 2.75,
-            ease: 'easeOut'
+            duration: 1.5,
+            when: 'beforeChildren',
+            staggerChildren: 0.25
         }
+    },
+    exit: {
+        opacity: 0,
+        x: -300,
+        duration: 0.25
     }
 };

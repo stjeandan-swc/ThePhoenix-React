@@ -1,16 +1,22 @@
 import React from 'react';
 
 // Components
-import Nav from '../components/Nav';
 import Construction from '../components/Construction';
+import Nav from '../components/Nav';
+
+// animation
+import {motion} from 'framer-motion';
+import {pageAnim} from '../animation';
 
 const Rentals = () => {
 
     return(
-        <div>
+        <>
             <Nav />
-            <Construction />
-        </div>
+            <motion.div variants={pageAnim} initial='hidden' animate='show' exit='exit'>
+                <Construction title='Membership' />
+            </motion.div>
+        </>
     );
 };
 

@@ -14,6 +14,7 @@ import Rentals from './pages/Rentals';
 import Error from './pages/Error';
 
 function App() {
+
   return (
     <div className="App">
       <GlobalStyle />

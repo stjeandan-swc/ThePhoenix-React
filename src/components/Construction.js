@@ -1,21 +1,19 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import {textSlideAnim} from '../animation';
-import {motion} from 'framer-motion';
 
-const Construction = () => {
+const Construction = ({title}) => {
 
     return(
         <STYLE_CONTAINER>
             <STYLE_HIDE>
-                <motion.h2 variants={textSlideAnim}>Sorry <span>Kinksters</span></motion.h2>
+                <h2>Sorry <span>Kinksters</span></h2>
             </STYLE_HIDE>
             <STYLE_HIDE>
-                <motion.h2 variants={textSlideAnim}>This page is under</motion.h2>
+                <h2>The {title} is under</h2>
             </STYLE_HIDE>
             <STYLE_HIDE>
-                <motion.h2 variants={textSlideAnim}>Construction</motion.h2>
+                <h2>Construction</h2>
             </STYLE_HIDE>
         </STYLE_CONTAINER>
     );
@@ -29,37 +27,7 @@ const STYLE_CONTAINER = styled.div`
     height: 90vh;
 
     h2{
-        font-size: 2.5rem;
         padding: 0.5rem 0rem;
-        letter-spacing: 10px;
-
-        span{
-            color: red;
-            font-weight: bold;
-            font-size: 3.5rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-
-        h2{
-            font-size: 2rem;
-
-            span{
-                font-size: 2.5rem;
-            }
-        }
-    }
-
-    @media (max-width: 576px) {
-
-        h2{
-            font-size: 1.25rem;
-
-            span{
-                font-size: 1.5rem;
-            }
-        }
     }
 `;
 

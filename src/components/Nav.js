@@ -5,23 +5,21 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = () => {
-
+    
     const [sideBar, toggleSideBar] = useState(false);
     const [burger, toggleBurger] = useState(false);
-    const [listItems, toggleList] = useState(false)
-
+    
     const showSideBar = () => {
         toggleSideBar(!sideBar);
-        toggleList(!listItems);
         toggleBurger(!burger);
-    }
+    };
 
     return(
         <STYLE_NAV>
             <STYLE_NAV_LOGO className="nav-logo">
                 <Link to='/about'>THE PHOENIX</Link>
             </STYLE_NAV_LOGO>
-            <STYLE_NAV_LINKS className='nav-links' toggle={sideBar}>
+            <STYLE_NAV_LINKS className='nav-links' toggle={sideBar} onClick={showSideBar}>
                 <li>
                     <Link to='/about'>ABOUT US</Link>
                 </li>
