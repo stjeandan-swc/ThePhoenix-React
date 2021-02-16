@@ -24,7 +24,7 @@ const STYLE_CONTAINER = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
 
     h2{
         padding: 0.5rem 0rem;

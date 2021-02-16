@@ -73,7 +73,7 @@ const STYLE_NAV_LINKS = styled.ul`
     background-color: #3d3d3d;
     right: 0px;
     top: 10vh;
-    height: 90vh;
+    height: 80vh;
     width: 30%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
