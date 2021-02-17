@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 // animation
 import styled from 'styled-components';
@@ -30,6 +31,7 @@ const Membership = () => {
                     excepturi dignissimos soluta vero ipsum eaque, expedita doloremque!
                 </p>
             </STYLE_CONTAINER>
+            <Footer />
         </>
     );
 };

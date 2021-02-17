@@ -32,7 +32,7 @@ const Footer = () => {
 };
 
 const STYLED_FOOTER = styled.footer`
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;

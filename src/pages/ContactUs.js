@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Construction from '../components/Construction';
 import Faq from '../components/Faq';
+import Footer from '../components/Footer';
 
 // animation
 import {motion} from 'framer-motion';
@@ -18,6 +19,7 @@ const ContactUs = () => {
                 <Construction title='Contact Us' />
             </motion.div>
             <Faq />
+            <Footer />
         </>
     );
 };
